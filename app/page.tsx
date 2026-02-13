@@ -1,3 +1,5 @@
+import VehiclesModal from "./components/VehiclesModal";
+
 export default function Home() {
   return (
     <div className="min-h-screen gradient-mesh">
@@ -59,7 +61,11 @@ export default function Home() {
               Piattaforma tutto-in-uno per automatizzare task, integrare strumenti e far crescere il team
               senza complessità. Setup in minuti, risultati da subito.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col items-center justify-center gap-8">
+              <div className="relative flex flex-col items-center">
+                <VehiclesModal />
+              </div>
+              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href="#"
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-green-500 px-8 py-4 text-base font-semibold text-[var(--background)] transition-all hover:bg-green-400 hover:shadow-xl hover:shadow-green-500/30 sm:w-auto"
@@ -80,6 +86,7 @@ export default function Home() {
               >
                 Guarda la demo
               </a>
+              </div>
             </div>
             <p className="mt-4 text-sm text-[var(--muted)]">
               Nessuna carta richiesta · 14 giorni di prova · Cancellazione in un click
